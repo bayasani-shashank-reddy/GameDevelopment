@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Battle & Code Arena</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0c0a0c;
+            color: #d1d5db;
+            scroll-behavior: smooth;
+        }
+
+        .gradient-bg {
+            background-image: linear-gradient(to bottom right, #1a1a2e, #162a4a);
+        }
+
+        .hero-gradient-text {
+            background-image: linear-gradient(to right, #8b5cf6, #3b82f6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .btn-gradient {
+            background-image: linear-gradient(to right, #ec4899, #8b5cf6);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .btn-gradient:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200">
+
+    <!-- Header & Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 p-4 bg-black bg-opacity-70 backdrop-blur-sm rounded-b-xl border-b border-purple-800 mx-auto max-w-7xl">
+        <nav class="flex justify-between items-center">
+            <div class="flex items-center space-x-4">
+                <img src="https://placehold.co/40x40/5b21b6/ffffff?text=AURORA" alt="Aurora University Logo" class="rounded-full">
+                <a href="#" class="text-2xl font-bold hero-gradient-text">
+                    Code Battle & Code Arena
+                </a>
+            </div>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-300 hover:text-white transition duration-200">About</a>
+                <a href="#rules" class="text-gray-300 hover:text-white transition duration-200">Rules</a>
+                <a href="#prizes" class="text-gray-300 hover:text-white transition duration-200">Prizes</a>
+                <a href="#registration" class="py-2 px-4 rounded-full btn-gradient font-semibold text-white shadow-lg">
+                    Register Now
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative min-h-screen flex items-center justify-center text-center p-8 overflow-hidden bg-cover bg-center" style="background-image: url('https://placehold.co/1920x1080/0c0a0c/1a1a2e?text=');">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative z-10 max-w-4xl mx-auto">
+            <p class="text-lg md:text-xl text-purple-400 mb-2">Aurora University Presents</p>
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-extrabold leading-tight tracking-tighter hero-gradient-text">
+                Code Battle & Code Arena
+            </h1>
+            <p class="mt-6 text-lg md:text-xl text-gray-300">
+                Two premier coding events where ideas come to life.
+            </p>
+            <div class="mt-8 flex justify-center items-center flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 text-lg font-medium">
+                <span class="p-2 bg-gray-800 bg-opacity-50 rounded-xl">🗓️ Date: September 15-16</span>
+                <span class="p-2 bg-gray-800 bg-opacity-50 rounded-xl">🕒 Time: 9:30 AM - 4:30 PM</span>
+                <span class="p-2 bg-gray-800 bg-opacity-50 rounded-xl">📍 Venue: University Hall</span>
+            </div>
+            <a href="#registration" class="mt-12 inline-block py-4 px-10 rounded-full btn-gradient font-bold text-white text-lg shadow-lg">
+                Register Now
+            </a>
+        </div>
+    </section>
+
+    <!-- About the Event Section -->
+    <section id="about" class="py-24 px-8 md:px-16 lg:px-24 gradient-bg">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-teal-500">About the Events</h2>
+            <div class="grid md:grid-cols-2 gap-12 mt-12">
+                <div>
+                    <h3 class="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-teal-400">Code Battle - A Mini Hackathon</h3>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        The Mini Hackathon – Code Battle is a competitive programming event divided into three progressive levels designed to test participants’ problem-solving skills, coding agility, and ability to create real-world impact simulations. Participants will be evaluated based on accuracy, speed, creativity, and relevance. The entire event is scored out of 100 marks, distributed across the three levels.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-400">
+                        <li>Enhance coding and logical problem-solving abilities.</li>
+                        <li>Encourage creativity and innovative thinking.</li>
+                        <li>Provide hands-on hackathon experience.</li>
+                        <li>Foster teamwork, competitiveness, and time management.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-cyan-300 to-teal-400">Code Arena - A Python 2D Game Development Workshop</h3>
+                    <p class="text-lg leading-relaxed text-gray-300">
+                        Code Arena is a hands-on workshop on 2D Game Development using Python. This activity is designed to introduce students to the fundamentals of game design and programming through the popular Python library Pygame. Participants will learn how to create interactive 2D games by coding player movement, handling collisions, designing levels, and adding sound/graphics. By the end of the workshop, participants will have a working mini-game and a strong foundation to build more advanced projects in the future.
+                    </p>
+                    <ul class="list-disc list-inside mt-4 text-gray-400">
+                        <li>Introduce students to Python-based 2D game development.</li>
+                        <li>Provide practical experience with Pygame library and game loops.</li>
+                        <li>Teach concepts like player movement, events, collision detection, and scoring.</li>
+                        <li>Encourage creativity, problem-solving, and design thinking through game projects.</li>
+                        <li>Build confidence to design and deploy small games independently.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rules & Guidelines Section -->
+    <section id="rules" class="py-24 px-8 md:px-16 lg:px-24">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Rules & Guidelines</h2>
+            <div class="grid md:grid-cols-2 gap-12 mt-12">
+                <!-- Code Battle Rules -->
+                <div>
+                    <h3 class="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400">Code Battle Rules</h3>
+                    <div class="space-y-6">
+                        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">General Rules</h4>
+                            <ul class="list-disc list-inside text-gray-400 space-y-2">
+                                <li><strong>Eligibility:</strong> Open to all students, developers, and tech enthusiasts with basic coding knowledge.</li>
+                                <li><strong>Team Composition:</strong> Participants may compete individually or in teams of up to 4 members.</li>
+                                <li><strong>Registration:</strong> All participants must register before the event deadline.</li>
+                                <li><strong>Laptop Requirement:</strong> Participants must bring their own laptops with necessary software installed and Bring charger or fully charged Laptop</li>
+                                <li><strong>Code of Conduct:</strong> All participants are expected to maintain professionalism and refrain from plagiarism, cheating, or disruptive behavior.</li>
+                                <li><strong>Tools and Languages:</strong> C & Python is allowed unless specified otherwise. Internet access may be restricted during certain rounds.</li>
+                                <li><strong>Disqualification:</strong> Participants may be disqualified for unethical practices or not adhering to guidelines.</li>
+                            </ul>
+                        </div>
+                        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">General Guidelines</h4>
+                            <ul class="list-disc list-inside text-gray-400 space-y-2">
+                                <li>All submissions must be original.</li>
+                                <li>Code must be properly commented where applicable.</li>
+                                <li>Use of public resources (like AI tools) is allowed in Level 2 & 3.</li>
+                                <li>Participants must submit their presentation before the deadline.</li>
+                                <li>Final decisions by the judges are binding.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Arena Rules -->
+                <div>
+                    <h3 class="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400">Code Arena Rules</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">Participation & Technology</h4>
+                            <p class="text-gray-400">Individual participation. Basic Python knowledge required. Allowed technology: Python with Pygame library.</p>
+                        </div>
+                        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">Project Rules</h4>
+                            <p class="text-gray-400">Developed only during the workshop. Students must submit or showcase their mini-game at the end.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12">
+                <h3 class="text-3xl font-semibold mb-4 text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400">Roles</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+                    <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                        <h4 class="text-xl font-semibold mb-2">Students</h4>
+                        <p class="text-gray-400">Actively participate, learn, and develop their projects.</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                        <h4 class="text-xl font-semibold mb-2">Volunteers</h4>
+                        <p class="text-gray-400">Manage event coordination, assist participants, and handle logistics.</p>
+                    </div>
+                    <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                        <h4 class="text-xl font-semibold mb-2">Judges/Trainer</h4>
+                        <p class="text-gray-400">Evaluate projects, deliver the workshop, and guide development.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Code Battle Scoring Section -->
+    <section id="codebattle-scoring" class="py-24 px-8 md:px-16 lg:px-24 gradient-bg">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-sky-500">Code Battle Scoring Breakdown</h2>
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <!-- Level 1 -->
+                <div class="text-center p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold mb-3">Level 1: Code Quest</h3>
+                    <p class="text-gray-400">Algorithmic problem-solving round.</p>
+                    <p class="text-gray-400 font-bold mt-2">30 Marks</p>
+                    <ul class="list-disc list-inside text-left text-gray-400 mt-4 space-y-1">
+                        <li>Objective: Solve algorithmic problems within 90 minutes.</li>
+                        <li>Scoring: Full, partial, or no points based on solution correctness.</li>
+                    </ul>
+                </div>
+                <!-- Level 2 -->
+                <div class="text-center p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold mb-3">Level 2: Livewire Challenge</h3>
+                    <p class="text-gray-400">Dynamic problem-solving under time constraints.</p>
+                    <p class="text-gray-400 font-bold mt-2">30 Marks</p>
+                    <ul class="list-disc list-inside text-left text-gray-400 mt-4 space-y-1">
+                        <li>Objective: Solve dynamically assigned problems in 60 minutes.</li>
+                        <li>Scoring: Full points for correct solution, with bonus points for fastest submissions.</li>
+                    </ul>
+                </div>
+                <!-- Level 3 -->
+                <div class="text-center p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                    <h3 class="text-2xl font-semibold mb-3">Level 3: Impact Forge</h3>
+                    <p class="text-gray-400">Community impact simulation prototype.</p>
+                    <p class="text-gray-400 font-bold mt-2">40 Marks</p>
+                    <ul class="list-disc list-inside text-left text-gray-400 mt-4 space-y-1">
+                        <li>Objective: Design and build a simulation for a real-world problem.</li>
+                        <li>Scoring: 10 marks each for Innovation, Practicality, Code Quality, and Presentation.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prizes & Rewards Section -->
+    <section id="prizes" class="py-24 px-8 md:px-16 lg:px-24">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-8 text-center text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-emerald-500">Prizes & Rewards</h2>
+            <div class="grid md:grid-cols-2 gap-12 mt-12">
+                <!-- Code Battle Prizes -->
+                <div>
+                    <h3 class="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-emerald-400">Code Battle</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">🥇 Overall Champion</h4>
+                            <p class="text-gray-400">Grand Prize and Recognition based on cumulative marks.</p>
+                        </div>
+                        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">🏆 Round Winners</h4>
+                            <p class="text-gray-400">Certificates and prizes for the winners of each round.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Code Arena Prizes -->
+                <div>
+                    <h3 class="text-3xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-teal-300 to-emerald-400">Code Arena</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">✨ Best Game Design</h4>
+                            <p class="text-gray-400">Certificate of Recognition</p>
+                        </div>
+                        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">🏅 Best Beginner Project</h4>
+                            <p class="text-gray-400">Certificate of Encouragement</p>
+                        </div>
+                        <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">🏆 All Participants</h4>
+                            <p class="text-gray-400">Workshop Participation E-certificates.</p>
+                        </div>
+                         <div class="p-6 bg-gray-800 rounded-2xl shadow-lg border border-gray-700">
+                            <h4 class="text-xl font-semibold mb-2">🎮 Take-Home Project</h4>
+                            <p class="text-gray-400">Students will take home their own playable 2D game.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form Section -->
+    <section id="registration" class="py-24 px-8 md:px-16 lg:px-24 gradient-bg">
+        <div class="max-w-2xl mx-auto p-8 md:p-12 rounded-2xl bg-gray-800 shadow-xl border border-gray-700">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">
+                Register Now
+            </h2>
+            <p class="text-center text-gray-400 mb-6">
+                Please complete the Google Form below to register your team.
+            </p>
+            <!-- Replace the src URL below with your actual Google Form embed link. -->
+            <!-- To get the link, go to your Google Form, click "Send," then the "<>" embed tab, and copy the code. -->
+            <div class="overflow-hidden rounded-xl border border-gray-700 shadow-lg">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeXgviglo2rgB9iyX_G-oSkjmhZql5XtkqihcsXLcHiHa4Jbg/viewform?usp=sharing&ouid=107356260894614701055" width="100%" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-8 md:px-16 lg:px-24 text-center border-t border-gray-700 bg-gray-900">
+        <div class="max-w-6xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                <p class="text-gray-400">&copy; 2024 Code Battle & Code Arena. All Rights Reserved.</p>
+                <div class="flex space-x-6 text-gray-400">
+                    <a href="#" class="hover:text-white transition duration-200">Twitter</a>
+                    <a href="#" class="hover:text-white transition duration-200">LinkedIn</a>
+                    <a href="#" class="hover:text-white transition duration-200">Contact Us</a>
+                </div>
+            </div>
+            <p class="mt-4 text-gray-500 text-sm">Created with ❤️ for the developer community.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
